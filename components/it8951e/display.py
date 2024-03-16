@@ -19,7 +19,7 @@ CONF_DISPLAY_CS_PIN = "display_cs_pin"
 
 it8951e_ns = cg.esphome_ns.namespace('it8951e')
 IT8951ESensor = it8951e_ns.class_(
-    'IT8951ESensor', cg.PollingComponent, spi.SPIDevice, display.DisplayBuffer
+    'IT8951ESensor', spi.SPIDevice, display.DisplayBuffer
 )
 ClearAction = it8951e_ns.class_("ClearAction", automation.Action)
 
