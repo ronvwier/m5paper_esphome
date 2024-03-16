@@ -8,6 +8,7 @@ namespace esphome {
 namespace it8951e {
 
 class IT8951ESensor : // public PollingComponent,
+                      public Component,
                       public display::DisplayBuffer,
                       public spi::SPIDevice<spi::BIT_ORDER_MSB_FIRST, spi::CLOCK_POLARITY_LOW, spi::CLOCK_PHASE_LEADING,
                                             spi::DATA_RATE_20MHZ> {
